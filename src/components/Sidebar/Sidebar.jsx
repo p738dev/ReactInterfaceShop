@@ -42,7 +42,7 @@ const Sidebar = () => {
                     to={`category/${category}`}
                     className="text-[16px] tracking-[0.5px] capitalize hover:ml-5 hover:opacity-50 hover:text-orange-400"
                   >
-                    {category.replace("-", " ")}
+                    {category.name.replace("-", " ")}
                   </Link>
                 </li>
               ))}

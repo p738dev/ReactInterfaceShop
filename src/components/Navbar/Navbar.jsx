@@ -61,7 +61,7 @@ const Navbar = () => {
                   to={`category/${category}`}
                   className="capitalize text-sm"
                 >
-                  {category}
+                  {category.name}
                 </Link>
               </li>
             ))}

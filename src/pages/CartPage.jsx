@@ -12,7 +12,6 @@ const CartPage = () => {
   const dispatch = useDispatch();
   const carts = useSelector(getAllCarts);
   const { itemsCount, totalAmount } = useSelector((state) => state.cart);
-  console.log(itemsCount, totalAmount);
 
   if (carts.length === 0) {
     return (

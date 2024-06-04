@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   return (
-    <Link to={`/product/${product.id}`}>
+    <Link
+      to={`/product/${product.id}`}
+      key={product.id}
+    >
       <div className="relative justify-center border-2">
         <div className="absolute top-8 left-0  bg-gray-300 p-2 text-[14px] capitalize rounded-r-lg">
           {product.category}

@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import {
-  allProductsByCategory,
-  getProductsOfCategory,
-} from "../../store/categorySLice";
+import { getProductsOfCategory } from "../../store/categorySLice";
 
 const CategoryProduct = () => {
   const dispatch = useDispatch();
   const { category } = useParams();
-  const categoryProducts = useSelector(allProductsByCategory);
 
   useEffect(() => {
     dispatch(getProductsOfCategory(category));
